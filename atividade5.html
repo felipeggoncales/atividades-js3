@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lista = [3,5,7,19,20,3,21]
+        let maiorValor = -9999;
+        let menorValor = 9999;
+
+        for (item of lista) {
+            if (item < menorValor) {
+                menorValor = item;
+            }
+            if (item > maiorValor) {
+                maiorValor = item
+            }
+        }
+
+        alert('Maior valor: '+maiorValor+' | Menor valor: '+menorValor)
+    </script>
+</body>
+</html>

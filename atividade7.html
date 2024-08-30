@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <script>
+        let lista = [0,1,2,3,4,5];
+
+        for (posicao in lista) {
+            if (posicao % 2 != 0) {
+                lista.splice(posicao,1)
+            }
+        }
+
+        alert(lista)
+    </script>
+</body>
+</html>
